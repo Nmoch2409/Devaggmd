@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@devabotz-md'
-  var sticker_author = 'devaOfc'
+  var sticker_name = '@DevaBotz-md'
+  var sticker_author = 'DevaOfc'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -56,8 +56,8 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-global.packname = devabotz-md
-global.author = devaOfc
+global.packname = sticker_name
+global.author = sticker_author
 global.wm = '© devaOfc'
 
 global.multiplier = 1000 // The higher, The harder levelup
